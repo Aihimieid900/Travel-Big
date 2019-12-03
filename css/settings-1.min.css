@@ -1,0 +1,261 @@
+<<<<<<< HEAD
+*{font-family:Lato,sans-serif;-webkit-box-sizing:border-box;-o-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;--main-color:#0088f3!important;--text-fff:#fff!important;outline:0}.lato{font-family:'Lato',sans-serif;font-weight:400}@font-face{font-family:'lato';src:url(/webfonts/Lato-Bold.ttf) format('ttf'),url(/webfonts/Lato-Light.ttf) format('ttf'),url(/webfonts/Lato-Regular.ttf) format('ttf'),url(/webfonts/Lato-LightItalic.ttf) format('ttf');font-weight:400;font-style:normal;font-display:fallback}.sf-ultra{font-family:'SF UI Display Ultralight'}@font-face{font-family:'SF UI Display Ultralight';font-style:normal;font-weight:normal;src:url('../webfonts/sf-ui-display-ultralight-58646b19bf205.woff') format('woff')}.sf-thin{font-family:'SF UI Display Thin'}@font-face{font-family:'SF UI Display Thin';font-style:normal;font-weight:normal;src:url('../webfonts/sf-ui-display-thin-58646e9b26e8b.woff') format('woff')}.sf-light{font-family:'SF UI Display Light'}@font-face{font-family:'SF UI Display Light';font-style:normal;font-weight:normal;src:url('../webfonts/sf-ui-display-light-58646b33e0551.woff') format('woff')}.sf-med{font-family:'SF UI Display Medium'}@font-face{font-family:'SF UI Display Medium';font-style:normal;font-weight:normal;src:url('../webfonts/sf-ui-display-medium-58646be638f96.woff') format('woff')}.sf-semi{font-family:'SF UI Display Semibold'}@font-face{font-family:'SF UI Display Semibold';font-style:normal;font-weight:normal;src:url('../webfonts/sf-ui-display-semibold-58646eddcae92.woff') format('woff')}.sf-bold{font-family:'SF UI Display Bold'}@font-face{font-family:'SF UI Display Bold';font-style:normal;font-weight:normal;src:url('../webfonts/sf-ui-display-bold-58646a511e3d9.woff') format('woff')}.sf-heav{font-family:'SF UI Display Black'}@font-face{font-family:'SF UI Display Heavy';font-style:normal;font-weight:normal;src:url('../webfonts/sf-ui-display-heavy-586470160b9e5.woff') format('woff')}.sf-black{font-family:'SF UI Display Black'}@font-face{font-family:'SF UI Display Black';font-style:normal;font-weight:normal;src:local('SF UI Display Black'),url('../webfonts/sf-ui-display-black-58646a6b80d5a.woff') format('woff')}.main-color{background-color:var(--main-color);color:var(--text-fff)}.mian-color-text{color:var(--main-color)}.lato{font-family:lato!important}.fw-700{font-weight:700}.m-30{margin-right:30px}.mb-0{margin-bottom:0!important}.mt-5{margin-top:120px!important}.yellow{color:#ffc422}.navbar-light{padding:0}.navbar-light .navbar-brand{color:rgba(0,0,0,.9);margin:40px 0 40px 0;padding:0}.navbar-light .navbar-nav .nav-item:nth-of-type(1){margin:55px 0 55px 36px}.navbar-light .navbar-nav .nav-item:nth-of-type(2){margin:55px 0 55px 32px}.navbar-light .navbar-nav .nav-link{color:var(--text-fff);padding:0;font-weight:bold;letter-spacing:.45px}.navbar-left{left:6rem}.navbar-light .navbar-nav .active{width:16px;border-top:4px solid var(--text-fff)}.navbar-light .navbar-nav .active .nav-link{color:var(--text-fff)}.navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .nav-link:hover{color:var(--text-fff)}.user-photo{overflow:hidden;width:50px;height:50px;border:2px solid #fff;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%}.user-photo img{width:100%;height:100%}.breadcrumb{margin-top:15px;margin-bottom:15px;background:0;font-weight:bold}.breadcrumb .breadcrumb-item>a{color:#000!important}.affiliation{margin:0 0 70px 0}.affiliation .earn{margin:60px 0 0 0}.affiliation .earn .describe-earn{font-weight:700;font-size:34px}.icon{margin-bottom:50px}.affiliation .earn .describe-earn p:nth-of-type(1){margin-top:10px;line-height:24.37px}.affiliation .earn .describe-earn p:nth-of-type(2){letter-spacing:.01cm}.affiliation .earn .describe-earn p:nth-of-type(3){font-size:24px;font-weight:400}.affiliation .earn .describe-earn p:nth-of-type(4){font-size:18px;margin:32px 0 0 0}.affiliation .btn-primary{margin:30px 0 0 0;background:var(--main-color);color:#fff!important;padding:16px auto;border:2px solid var(--main-color);border-radius:200px;-webkit-border-radius:200px;-moz-border-radius:200px;-ms-border-radius:200px;-o-border-radius:200px}.copy{font-size:14px;font-family:'SF UI Display Light'}.copy .text-muted{padding:0!important;margin:0!important}.social{width:48px;height:48px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%}
+=======
+* {
+    font-family: Lato, sans-serif;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    --main-color: #0088F3 !important;
+    --text-fff: #fff !important;
+    outline: 0
+}
+.lato{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400
+}
+@font-face {
+    font-family: 'lato';
+    src: url(/webfonts/Lato-Bold.ttf) format('ttf'),
+     url(/webfonts/Lato-Light.ttf) format('ttf'),
+      url(/webfonts/Lato-Regular.ttf) format('ttf'),
+       url(/webfonts/Lato-LightItalic.ttf) format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback
+}
+.sf-ultra{
+    font-family: 'SF UI Display Ultralight';
+}
+@font-face {
+    font-family: 'SF UI Display Ultralight';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../webfonts/sf-ui-display-ultralight-58646b19bf205.woff') format('woff');
+}
+.sf-thin{font-family: 'SF UI Display Thin';
+}
+@font-face {
+    font-family: 'SF UI Display Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../webfonts/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+}
+.sf-light{
+    font-family: 'SF UI Display Light';
+}
+@font-face {
+    font-family: 'SF UI Display Light';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../webfonts/sf-ui-display-light-58646b33e0551.woff') format('woff');
+}
+.sf-med{
+font-family: 'SF UI Display Medium';
+}
+@font-face {
+    font-family: 'SF UI Display Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../webfonts/sf-ui-display-medium-58646be638f96.woff') format('woff');
+}
+.sf-semi{
+    font-family: 'SF UI Display Semibold';
+    }
+    @font-face {
+        font-family: 'SF UI Display Semibold';
+        font-style: normal;
+        font-weight: normal;
+        src:url('../webfonts/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+    }
+                        .sf-bold{
+                            font-family: 'SF UI Display Bold';
+                            }
+@font-face {
+    font-family: 'SF UI Display Bold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../webfonts/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+}
+.sf-heav{
+    font-family: 'SF UI Display Black';
+    }
+@font-face {
+    font-family: 'SF UI Display Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../webfonts/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+}
+.sf-black{
+    font-family: 'SF UI Display Black';
+    }
+@font-face {
+    font-family: 'SF UI Display Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Black'), url('../webfonts/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+}
+.main-color {
+    background-color: var(--main-color);
+    color: var(--text-fff)
+}
+
+.mian-color-text {
+    color: var(--main-color)
+}
+
+.lato {
+    font-family: lato !important
+}
+
+.fw-700 {
+    font-weight: 700
+}
+.m-30{
+    margin-right:30px;
+}
+.mb-0 {
+    margin-bottom: 0 !important
+}
+
+.mt-5 {
+    margin-top: 120px !important
+}
+
+.yellow {
+    color: #ffc422
+}
+.navbar-light{
+    padding:0;
+}
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    margin: 40px 0 40px 0;
+    padding:0;
+}
+.navbar-light .navbar-nav .nav-item:nth-of-type(1){
+    margin:55px 0 55px 36px;
+}
+.navbar-light .navbar-nav .nav-item:nth-of-type(2){
+    margin:55px 0 55px 32px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--text-fff);
+    padding:0;
+    font-weight: bold;
+    letter-spacing: 0.45px;
+}
+
+.navbar-left {
+    left: 6rem
+}
+
+.navbar-light .navbar-nav .active {
+    width: 16px;
+    border-top: 4px solid var(--text-fff)
+}
+
+.navbar-light .navbar-nav .active .nav-link {
+    color: var(--text-fff)
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--text-fff)
+}
+.user-photo {
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%
+}
+
+.user-photo img {
+    width: 100%;
+    height: 100%
+}
+
+.breadcrumb {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: none;
+    font-weight:bold;
+}
+
+.breadcrumb .breadcrumb-item>a {
+    color: #000 !important
+}
+
+.affiliation {
+    margin: 0 0 70px 0
+}
+
+.affiliation .earn {
+    margin: 60px 0 0 0
+}
+
+.affiliation .earn .describe-earn {
+    font-weight: 700;
+    font-size: 34px
+}
+.icon{
+    margin-bottom:50px; 
+}
+.affiliation .earn .describe-earn p:nth-of-type(1) {
+   margin-top:10px;
+   line-height: 24.37px;
+}
+.affiliation .earn .describe-earn p:nth-of-type(2) {
+    letter-spacing: .01cm;
+ 
+}
+
+.affiliation .earn .describe-earn p:nth-of-type(3) {
+    font-size: 24px;
+    font-weight: 400
+}
+
+.affiliation .earn .describe-earn p:nth-of-type(4) {
+    font-size: 18px;
+    margin: 32px 0 0 0
+}
+
+.affiliation .btn-primary {
+    margin: 30px 0 0 0;
+    background: var(--main-color);
+    color: #fff !important;
+    padding: 16px auto;
+    border: 2px solid var(--main-color);
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px
+}
+
+.copy {
+    font-size: 14px;
+    font-family: 'SF UI Display Light';
+}
+
+.copy .text-muted {
+    padding: 0 !important;
+    margin: 0 !important
+}
+
+.social {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%
+}
+>>>>>>> remove class - responsive

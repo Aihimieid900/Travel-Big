@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta cherset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>search result</title>
+   <!-- Start file render  font awesome css files -->
+   <link rel="stylesheet" href="CSS/all.min.css" />
+   <!-- End file render  font awesome -->
+   <!-- render bootstrap file css-->
+   <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+   <!-- render custom file style  css -->
+   <link rel="stylesheet" href="CSS/jquery-ui.min.css" />
+   <link rel="stylesheet" href="CSS/search-result-styles.min.css" />
+</head>
+
+<body>
+   <!--    -->
+   <!-- This is start navbar-->
+   <!-- This is start navbar-->
+   <nav class="navbar navbar-expand-lg navbar-light main-color ">
+      <div class="container position-relative">
+         <a class="navbar-brand" href="#"><img src="img/logo/logo.svg" alt="logo"></a>
+         <div class=" position-absolute navbar-left">
+            <ul class="navbar-nav flex-row">
+               <li class="nav-item ">
+                  <a class="nav-link sf-bold" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                  <span class="active d-block rounded"></span>
+               </li>
+               <li class="nav-item ">
+                  <a class="nav-link sf-bold" href="#">Visit App</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- This is End navbar-->
+   </nav>
+   <section class="container">
+      <!-- This is start header of loofing for text-->
+      <div class="header mt-3">
+         <!-- This is start inputs-->
+         <!-- This is start input travelling from-->
+         <div class="row">
+            <div class="input-group country col-6 col-lg-3 position-relative overflow-hidden m-30">
+               <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="far fa-compass fa-2x"></i></div>
+               </div>
+               <input type="text" class="list-country fw-700" list="country" required>
+               <span class="position-absolute placeholder-for-datalist text-capitalize text-muted">travelling
+                  from</span>
+               <datalist id="country" class="edit-list">
+                  <option value="Lebanon, NH, United States(LEB-Lebanon…)">
+                  <option value="Nashville, TN, United States of America (BA…)">
+                  <option value="Beirut, Lebanon (BEY-Rafic Hariri Intl.)">
+                  <option value="Tri-Cities, TN, United States of America (TR…">
+               </datalist>
+            </div>
+            <!-- This is End input travelling from-->
+            <!-- This is start input travelling to-->
+            <div class="input-group country col-6 col-lg-3 position-relative overflow-hidden m-30">
+               <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="far fa-compass fa-2x"></i></div>
+               </div>
+               <input type="text" class="list-country fw-700" list="country" required>
+               <span class="position-absolute placeholder-for-datalist text-capitalize text-muted">travelling
+                  to</span>
+               <datalist id="country1" class="edit-list">
+                  <option value="Lebanon, NH, United States(LEB-Lebanon…)">
+                  <option value="Nashville, TN, United States of America (BA…)">
+                  <option value="Beirut, Lebanon (BEY-Rafic Hariri Intl.)">
+                  <option value="Tri-Cities, TN, United States of America (TR…">
+               </datalist>
+            </div>
+            <!-- This is end input travelling to -->
+            <!-- This is start input Date from && to -->
+            <div class="input-group custom-input col-11 col-lg-4 position-relative mt-3 mt-lg-0 m-30">
+               <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="far fa-calendar-alt fa-2x"></i></div>
+               </div>
+               <!-- span he is == placeholder -->
+               <!-- this is input date from-->
+               <input type="text" class="list-date" required />
+               <span class="position-absolute placeholder-for-date text-capitalize text-muted">from</span>
+               <!-- This is start input Date to-->
+               <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="far fa-calendar-alt fa-2x"></i></div>
+               </div>
+               <!-- span he is == placeholder -->
+               <!-- this is input date to-->
+               <input type="type" class="list-date" required />
+               <span class="position-absolute placeholder-for-date-2 text-capitalize text-muted">to</span>
+            </div>
+            <!-- This is start input Date from && to -->
+            <!-- This is button  search -->
+            <a class="btn btn-primary main-color col-1  mt-3 mt-lg-0 pt-3 text-center position-relative "
+               href="search-result.html"><i class="fas fa-search fa-2x"></i></a>
+         </div>
+         <!-- This is end inputs-->
+         <!-- This is end header-->
+      </div>
+   </section>
+   <!--    -->
+   <section class="container">
+      <div class="search-result position-relative">
+         <div class="row d-flex">
+            <!-- this is left side of screen control search-->
+            <!-- this is left side of screen control search start-->
+            <div class="right-animate text-center position-absolute">
+               <i class="fas fa-cog fa-2x mt-2 mark-setting"></i>
+            </div>
+            <div
+               class=" left-side left-side-animate position-absolute col-10 col-sm-6 col-lg-4 d-flex justify-content-center justify-content-sm-start ">
+               <div class="control-search-price position-relative">
+                  <i class="fas fa-angle-left fa-3x text-right d-block d-lg-none position-absolute left-animate"></i>
+                  <!-- this is heading left side of screen control search-->
+                  <p class="h5 sf-bold">Sort by</p>
+                  <!-- this is checkbox left side of screen control search-->
+                  <div class="checkbox">
+                     <!-- this is first checkbox left side of screen control search-->
+                     <input type="checkbox" id="price" checked name="sort">
+                     <label for="price" class="sort-by text-capitalize position-relative sf-bold"><span
+                           class="position-absolute checked-mark text-center d-flex align-items-center"><i
+                              class="fas fa-check hidden"></i></span>price</label>
+                     <!-- this is second checkbox left side of screen control search-->
+                     <input type="checkbox" id="rating" name="sort">
+                     <label for="rating" class="sort-by text-capitalize position-relative sf-bold mian-color-text"><span
+                           class="position-absolute checked-mark text-center d-flex align-items-center"><i
+                              class="fas fa-check hidden"></i></span>rating</label>
+                     <!-- this is checkbox left side of screen control search IS END \\\\\\\\-->
+                  </div>
+                  <!-- this is heading left side of screen control search-->
+                  <p class="h5 text-capitalize filter sf-bold">filter by</p>
+                  <!-- this is agency input  left side of screen control search-->
+                  <div class="agency mt-3">
+                     <p class="h4 text-capitalize sf-semi">agency name</p>
+                     <div class="input-group position-relative mb-3  shadow">
+                        <div class="input-group-prepend">
+                           <div class="input-group-text text-muted"><i class="far fa-compass "></i></div>
+                        </div>
+                        <!-- this is input agencey -->
+                        <input type="text" required>
+                        <span class="placeholder text-capitalize position-absolute text-muted">enter agency name</span>
+                     </div>
+                     <!-- this is Agency left side of screen control search IS END \\\\\\\\-->
+                  </div>
+                  <!--/*////////////////////   Range Price >////////////////////*/-->
+                  <div class="d-flex justify-content-start align-items-start position-relative">
+                     <p>
+                        <label class="text-capitalize h4 sf-semi mt-16">Price range</label>
+                        <br>
+                        <label for="amount" class="mb-16"></label>
+                        <input type="text" id="amount" readonly style="border:0; color:#0088f3; font-weight:bold;">
+                     </p>
+                     <div id="slider-range" class="slider mb-16" ></div>
+                  </div>
+                  <!--/*////////////////////   Range Price is end >////////////////////*/-->
+                  <!-- this is heading location and input location left side of screen control search-->
+                  <div class="location mt-3">
+                     <p class="h4 sf-semi text-capitalize">location</p>
+                     <div class="input-group mb-3  shadow ">
+                        <div class="input-group-prepend">
+                           <div class="input-group-text text-muted"><i class="far fa-compass "></i></div>
+                        </div>
+                        <!-- This is INPUT Location -->
+                        <input type="text" required />
+                        <span class="placeholder text-capitalize position-absolute text-muted">enter location</span>
+                     </div>
+                  </div>
+                  <!-- end location section -->
+                  <div class="star-rating mt-24">
+                     <!-- this is heading star rating left side of screen control search-->
+                     <p class="h4 sf-semi text-capitalize">star rating</p>
+                     <!-- this is from 1 to 5 item rating left side of screen control search-->
+                     <ul class="list-group-horizontal list-unstyled  d-inline-flex">
+                        <!-- One star-->
+                        <li class="list-group-item text-center active"><i class="fas fa-star"></i></li>
+                        <!-- Two star-->
+                        <li class="list-group-item text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </li>
+                        <!-- Three star-->
+                        <li class="list-group-item text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                              class="fas fa-star"></i></li>
+                        <!-- Four star-->
+                        <li class="list-group-item text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                              class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                        <!-- Five star-->
+                        <li class="list-group-item text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                              class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- this is left side of screen control search END \\\\\\\\\-->
+            </div>
+         </div>
+         <div class="row">
+            <div class="offset-lg-4 card col-6 col-lg-4">
+               <img src="img/@2/1.png" class="card-img-top  " alt="county">
+               <div class="card-body position-relative d-flex">
+                  <div>
+                     <h5 class="card-title text-capitalize fw-700 sf-semi">5-day yellowstone, salt lake, grand teton tour</h5>
+                     <!-- span to show price and offer-->
+                     <span class="card-text mian-color-text fw-700 mb-0 sf-semi">$593.30</span><span class=" text-muted ">
+                        <del>$700</del></span>
+                     <!-- this is start five icon star to rate tour-->
+                     <div>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <!--Span to view number reviews-->
+                        <span class="text-muted review sf-bold">(93 Reviews)</span>
+                        <a href="offer-detials.html"
+                           class="btn btn-primary d-none d-md-block rounded main-color position-absolute text-capitalize">book
+                           now</a>
+                     </div>
+                     <!-- this is End five icon star to rate tour-->
+                     <a href="offer-detials.html"
+                        class="btn btn-primary d-block d-md-none mb-3  rounded main-color text-capitalize">book now</a>
+                  </div>
+               </div>
+            </div>
+            <div class="card col-6 col-lg-4">
+               <img src="img/@2/2.png" class="card-img-top  " alt="county">
+               <div class="card-body position-relative d-flex p-0 p-md-3">
+                  <div>
+                     <h5 class="card-title text-capitalize fw-700 sf-semi">5-day yellowstone, salt lake, grand teton tour</h5>
+                     <!-- span to show price and offer-->
+                     <span class="card-text mian-color-text fw-700 mb-0 sf-semi">$62.98 </span><span class=" text-muted ">
+                        <del>$85</del></span>
+                     <!-- this is start five icon star to rate tour-->
+                     <div>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star-half yellow"></i>
+                        <!--Span to view number reviews-->
+                        <span class="text-muted review sf-bold">(135 Reviews)</span>
+                        <a href="offer-detials.html"
+                           class="btn btn-primary d-none d-md-block rounded main-color position-absolute text-capitalize">book
+                           now</a>
+                     </div>
+                     <a href="offer-detials.html"
+                        class="btn btn-primary d-block d-md-none mb-3 rounded main-color text-capitalize">book now</a>
+                     <!-- this is End five icon star to rate tour-->
+                  </div>
+               </div>
+            </div>
+            <div class=" offset-lg-4 card col-6 col-lg-4  mt-70 ">
+               <img src="img/@2/3.png" class="card-img-top  " alt="county">
+               <div class="card-body position-relative d-flex">
+                  <div>
+                     <h5 class="card-title text-capitalize fw-700 sf-semi">Small-Group Gems of Toronto City Tour W/ Casa Loma
+                     </h5>
+                     <!-- span to show price and offer-->
+                     <span class="card-text mian-color-text fw-700 mb-0 sf-semi">$118.95</span><span class=" text-muted ">
+                        <del>$125</del></span>
+                     <!-- this is start five icon star to rate tour-->
+                     <div>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <!--Span to view number reviews-->
+                        <span class="text-muted review sf-bold">(72 Reviews)</span>
+                        <a href="offer-detials.html"
+                           class="btn btn-primary d-none d-md-block rounded main-color position-absolute text-capitalize two">book
+                           now</a>
+                     </div>
+                     <a href="offer-detials.html"
+                        class="btn btn-primary d-block d-md-none mb-3 rounded main-color text-capitalize">book now</a>
+                     <!-- this is End five icon star to rate tour-->
+                  </div>
+               </div>
+            </div>
+            <div class="  card col-6 col-lg-4  mt-70">
+               <img src="img/@2/china@2x.png" class="card-img-top  " alt="county">
+               <div class="card-body position-relative d-flex ">
+                  <div>
+                     <h5 class="card-title text-capitalize fw-700 sf-semi">1-Day Washington, DC Tour from New York City</h5>
+                     <!-- span to show price and offer-->
+                     <span class="card-text mian-color-text fw-700 mb-0 sf-semi">$160.00</span><span class=" text-muted ">
+                        <del>$210</del></span>
+                     <!-- this is start five icon star to rate tour-->
+                     <div>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <!--Span to view number reviews-->
+                        <span class="text-muted review sf-bold">(99 Reviews)</span>
+                        <a href="offer-detials.html"
+                           class="btn btn-primary d-none d-md-block  rounded main-color position-absolute text-capitalize two">book
+                           now</a>
+                     </div>
+                     <a href="offer-detials.html"
+                        class="btn btn-primary d-block d-md-none mb-3 rounded main-color text-capitalize">book now</a>
+                     <!-- this is End five icon star to rate tour-->
+                  </div>
+               </div>
+            </div>
+            <div class=" offset-lg-4 col-6  card col-lg-4  mt-70">
+               <img src="img/@2/screen.png" class="card-img-top" alt="county">
+               <div class="card-body position-relative d-flex ">
+                  <div>
+                     <h5 class="card-title text-capitalize fw-700 sf-semi">marmaris 3 nights 2019</h5>
+                     <!-- span to show price and offer-->
+                     <span class="card-text mian-color-text fw-700 mb-0 sf-semi">$430</span><span class=" text-muted ">
+                        <del>$560</del></span>
+                     <!-- this is start five icon star to rate tour-->
+                     <div>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <!--Span to view number reviews-->
+                        <span class="text-muted review sf-bold">(93 Reviews)</span>
+                        <a href="offer-detials.html"
+                           class="btn btn-primary d-none d-md-block rounded main-color position-absolute text-capitalize three">book
+                           now</a>
+                     </div>
+                     <a href="offer-detials.html"
+                        class="btn btn-primary d-block d-md-none mb-3 rounded main-color text-capitalize">book now</a>
+                     <!-- 
+                        this is End five icon star to rate tour-->
+                  </div>
+               </div>
+            </div>
+            <div class="card col-6 col-lg-4 mt-70 ">
+               <img src="img/@2/839e56633e9789dc2b2136@2x.png" class="card-img-top  " alt="county">
+               <div class="card-body position-relative d-flex ">
+                  <div>
+                     <h5 class="card-title fw-700 text-capitalize sf-semi">marmaris 3 nights 2019</h5>
+                     <!-- span to show price and offer-->
+                     <span class="card-text mian-color-text fw-700 mb-0 sf-semi">$390.00</span><span class=" text-muted ">
+                        <del>$450</del></span>
+                     <!-- this is start five icon star to rate tour-->
+                     <div>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <i class="fas fa-star yellow"></i>
+                        <!--Span to view number reviews-->
+                        <span class="text-muted review sf-bold">(93 Reviews)</span>
+                        <a href="offer-detials.html"
+                           class="btn btn-primary d-none d-md-block rounded main-color position-absolute text-capitalize three">book
+                           now</a>
+                     </div>
+                     <a href="offer-detials.html"
+                        class="btn btn-primary d-block d-md-none mb-3 rounded main-color text-capitalize">book now</a>
+                     <!-- this is End five icon star to rate tour-->
+                  </div>
+               </div>
+            </div>
+            <!-- this is end row-->
+         </div>
+         <!-- start card search result-->
+         <!-- End card search result-->
+      </div>
+   </section>
+   <!--    -->
+   <footer>
+      <div class="container position-relative">
+         <div class="row">
+            <div class="copy col-6 d-flex align-items-center justify-content-start">
+               <img src="img/logo/logofooter.svg" class="mr-3" alt="logo" />
+               <p class="text-muted">visit.vc &copy; Copyright 2019-2010</p>
+            </div>
+            <div class="col-6 d-flex  align-items-center justify-content-end pt-5 pb-5">
+               <span class="main-color social  d-flex  align-items-center justify-content-center mr-3">
+                  <i class="fab fa-facebook-f fa-2x"></i>
+               </span>
+               <span class="main-color social d-flex align-items-center justify-content-center mr-3">
+                  <i class="fab fa-twitter fa-2x"></i>
+               </span>
+               <span class="main-color social d-flex align-items-center justify-content-center">
+                  <i class="fab fa-instagram fa-2x"></i>
+               </span> </div>
+         </div>
+      </div>
+   </footer>
+   <!--    -->
+   <script src="JS/jquery-3.4.1.min.js"></script>
+   <script src="JS/jquery-ui.min.js"></script>
+   <!-- Start file render  font awesome js file-->
+   <!-- THIS is script custom to slider range without any style you can delet it but no value show when change slider range position-->
+   <script>
+      $("#slider-range").slider({
+         range: true,
+         min: 100,
+         max: 5000,
+         values: [500, 2500],
+         slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+         }
+      });
+      $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+         " - $" + $("#slider-range").slider("values", 1));
+
+      $(".list-date").datepicker();
+      $(function () {
+         if ($(document).innerWidth() > 991) {
+            $(".left-side").removeClass("left-side-animate")
+         } else {
+            $(".left-side").addClass("left-side-animate")
+         };
+
+         $(".right-animate").on("click", function () {
+            $(".left-side-animate").css("left", "-20px");
+         });
+
+         $(".left-animate").on("click", function () {
+            $(".left-side-animate").css("left", "-480px");
+         });
+
+      });
+     
+   </script>
+   <!-- This is End Script slider range bar-->
+   <script src="JS/all.min.js"></script>
+   <!-- End file render  font awesome js file-->
+   <!-- Start file render  bootstrap files css-->
+   <script src="JS/popper.js"></script>
+   <!-- End file render  bootstrap files css-->
+   <script src="JS/bootstrap.min.js"></script>
+   <!--    -->
+</body>
+
+</html>

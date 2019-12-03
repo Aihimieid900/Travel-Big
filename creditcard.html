@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta cherset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>payments</title>
+      <!-- Start file render  font awesome css files -->
+      <link rel="stylesheet" href="css/all.min.css" />
+      <!-- End file render  font awesome -->
+      <!-- render bootstrap file css-->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- render custom file style  css -->
+      <link rel="stylesheet" href="css/creditcard.min.css" />
+      <!-- render font LATO -->
+   </head>
+   <body>
+      <!--      -->
+      <!-- This is start navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light main-color ">
+         <div class="container position-relative">
+            <a class="navbar-brand" href="#"><img src="img/logo/logo.svg" alt="logo"></a>
+            <div class=" position-absolute navbar-left">
+               <ul class="navbar-nav flex-row">
+                  <li class="nav-item ">
+                     <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>                    <span class="active d-block rounded"></span>
+                  </li>
+                  <li class="nav-item ml-3">
+                     <a class="nav-link" href="#">Visit App</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="user-photo">
+               <a href="user-profile.html"><img class="w-100" src="img/11.jpg" alt="user photo"/></a>
+            </div>
+         </div>
+         <!-- This is End navbar-->
+      </nav>
+      <section class="container offer-booking-payments">
+         <div class="row">
+            <div class="describe-offer-booking-payments mt-5 col-12">
+               <p class="lead text-capitalize f-24">
+                  your selected offer
+               </p>
+               <p class="h4 fw-700 text-capitalize ">
+                  5-day yellowstone, salt lake, grand teton tour
+               </p>
+               <p class="text-capitalize m-0 f-14">
+                  Sun, Jun 2
+               </p>
+               <p class="text-capitalize m-0 f-14">
+                  2 Adults
+               </p>
+               <p class="text-capitalize  f-14">
+                  1 Day, Classic Ticket in Multilingual
+               </p>
+               <p class="text-capitalize f-14 mt-2">
+                  <i class="far fa-check-circle mr-2 mt-2"></i>  free cancellation before Mon. Jun 3<i class="fas fa-exclamation-circle mian-color-text ml-4" data-toggle="tooltip" data-placement="top" title="free cancellation before Mon. Jun 3."></i>
+               </p>
+               <div class="position-relative">
+                  <p class="text-capitalize red f-14 mt-1">
+                     <i class="far fa-calendar-minus mr-2"></i>  Your trip starts in 5 days. Book now before it sells out.
+                  </p>
+                  <p class="text-right card-text mian-color-text text-capitalize fw-700 price position-absolute">
+                     <span class="text-muted offer"><del>$750.20</del> </span> $593.30
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="row d-flex justify-content-center mt-120">
+            <div class="accordion col-12 col-sm-10 col-lg-7 position-relative" id="accordionExample">
+               <button class="btn heading-payments btn-link text-capitalize sf-bold active" id="headingOne" type="button"
+                  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               debit / credit card
+               </button>
+               <button class="btn btn-link heading-payments collapsed text-capitalize  text-center sf-bold" id="headingTwo"
+                  type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+               cash
+               </button>
+               <button class="btn heading-payments btn-link collapsed text-capitalize sf-bold" id="headingThree" type="button"
+                  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+               bank transfer
+               </button>
+               <div class="card">
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                     data-parent="#accordionExample">
+                     <div class="card-body">
+                        <form class="text-capitalize mt-4">
+                           <img src="img/master.svg" alt="heading-payments">
+                           <div class="form-row mt-3">
+                              <div class="form-group col-12 text-capitalize">
+                                 <label for="inputEmail4">cardholder name<span class="red">*</span></label>
+                                 <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-12 ">
+                                 <label for="inputPassword4">debit/credit card number<span
+                                    class="red">*</span></label>
+                                 <input type="text" class="form-control" id="inputPassword4">
+                              </div>
+                           </div>
+                           <div class="form-row">
+                              <label for="inputState1" for="inputState2" class="col-12">expiration date<span class="red">*</span>
+                              </label>
+                              <div class="form-group col-4">
+                                 <select id="inputState1" class="form-control">
+                                    <option selected>Month</option>
+                                    <option>January </option>
+                                    <option>February </option>
+                                    <option>March </option>
+                                    <option>April </option>
+                                    <option>May </option>
+                                    <option>June </option>
+                                    <option>July </option>
+                                    <option>August</option>
+                                    <option>September </option>
+                                    <option>October </option>
+                                    <option>November</option>
+                                    <option>December </option>
+                                 </select>
+                              </div>
+                              <div class="form-group col-4">
+                                 <select id="inputState2" class="form-control">
+                                    <option selected>Year</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                 </select>
+                              </div>
+                              <div class="form-group col-12">
+                                 <label for="inputZip1">card security code<span class="red">*</span></label>
+                                 <input type="text" class="form-control" id="inputZip1">
+                              </div>
+                              <div class="form-group col-12">
+                                 <label for="inputZip">billing zip code<span class="red">*</span></label>
+                                 <input type="text" class="form-control" id="inputZip">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" id="gridCheck3">
+                                 <label class="form-check-label" for="gridCheck3">
+                                 By selecting to complete this booking I acknowledge that I have read and
+                                 accept the <a href="#">Rules & Restrictions</a>, <a href="#">Terms of
+                                 Use</a>,<a href="#"> Privacy Policy</a> and <a href="#"> Government
+                                 Travel Advice</a>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="d-flex justify-content-center">
+                              <button type="submit" class="btn btn-primary d-flex justify-content-center text-capitalize">complete
+                              booking</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                     <div class="card-body">
+                        <div class="form-row mt-3 text-capitalize">
+                           <label for="inputEmail41" class="col-12">amount<span class="red">*</span></label>
+                           <div class="form-group col-8 text-capitalize">
+                              <input type="email" class="form-control" id="inputEmail41">
+                           </div>
+                           <div class="form-group col-3">
+                              <select id="inputState3" class="ml-3 form-control">
+                                 <option selected>UDS</option>
+                                 <option>ERU</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck2">
+                              <label class="form-check-label" for="gridCheck2">
+                              By selecting to complete this booking I acknowledge that I have read and accept
+                              the<br> <a href="#">Rules & Restrictions</a>, <a href="#">Terms of Use</a>,<a
+                                 href="#"> Privacy Policy</a> and <a href="#"> Government Travel Advice</a>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                           <button type="submit" class="btn btn-primary d-flex justify-content-center text-capitalize">complete
+                           booking</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                     data-parent="#accordionExample">
+                     <div class="card-body">
+                        <div class="form-row mt-3 text-capitalize">
+                           <label for="inputEmail42" class="col-12">amount<span class="red">*</span></label>
+                           <div class="form-group col-8 text-capitalize">
+                              <input type="email" class="form-control" id="inputEmail42">
+                           </div>
+                           <div class="form-group col-3">
+                              <select id="inputState4" class="ml-3 form-control">
+                                 <option selected>UDS</option>
+                                 <option>ERU</option>
+                              </select>
+                           </div>
+                           <div class="form-group col-11 text-capitalize">
+                              <label for="inputEmail43">bank name<span class="red">*</span></label>
+                              <input type="text" class="form-control" id="inputEmail43">
+                           </div>
+                           <div class="form-group col-11 text-capitalize">
+                              <label for="inputEmail44">SWIFT code<span class="red">*</span></label>
+                              <input type="text" class="form-control" id="inputEmail44">
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck1">
+                              <label class="form-check-label" for="gridCheck1">
+                              By selecting to complete this booking I acknowledge that I have read and accept
+                              the<br> <a href="#">Rules & Restrictions</a>, <a href="#">Terms of Use</a>,<a
+                                 href="#"> Privacy Policy</a> and <a href="#"> Government Travel Advice</a>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                           <button type="submit" class="btn btn-primary d-flex justify-content-center text-capitalize">complete
+                           booking</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-8">
+               <div class="trems d-flex justify-content-center">
+                  <p class="lead text-center">
+                     We use secure transmission and encrypted storage to protect your personal information. This
+                     payment will be processed in the U.S. This does not apply when the travel provider (agency,
+                     etc.) processes your payment.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--      -->
+      <footer>
+         <div class="container position-relative">
+            <div class="row">
+               <div class="copy col-6 d-flex align-items-center justify-content-start">
+                  <img src="img/logo/logofooter.svg" class="mr-3" alt="logo" />
+                  <p class="text-muted">visit.vc &copy; Copyright 2019-2010</p>
+               </div>
+               <div class="col-6 d-flex  align-items-center justify-content-end pt-5 pb-5">
+                  <span class="main-color social  d-flex  align-items-center justify-content-center mr-3">
+                  <i class="fab fa-facebook-f fa-2x"></i>
+                  </span>
+                  <span class="main-color social d-flex align-items-center justify-content-center mr-3">
+                  <i class="fab fa-twitter fa-2x"></i>
+                  </span>
+                  <span class="main-color social d-flex align-items-center justify-content-center">
+                  <i class="fab fa-instagram fa-2x"></i>
+                  </span> 
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--      -->
+      <script src="JS/jquery-3.4.1.min.js"></script>
+      <!-- Start file render  font awesome js file-->
+      <script src="JS/all.min.js"></script>
+      <!-- End file render  font awesome js file-->
+      <!-- Start file render  bootstrap files css-->
+      <script src="JS/popper.js"></script>
+      <!-- End file render  bootstrap files css-->
+      <script src="JS/bootstrap.min.js"></script>
+      <!--      -->
+   </body>
+</html>

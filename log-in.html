@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta cherset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Log in Adobe XD</title>
+      <!-- Start file render  font awesome css files -->
+      <link rel="stylesheet" href="css/all.min.css" />
+      <!-- End file render  font awesome -->
+      <!-- render bootstrap file css-->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- render custom file style  css -->
+      <link rel="stylesheet" href="css/log-in.min.css" />
+      <!-- render font LATO -->
+      <link type='text/css' href='http://fonts.googleapis.com/css?family=Lato:400,700' />
+   </head>
+   <body>
+      <!-- class container of Bootstrap -->
+      <section class="container">
+         <!-- class row of Bootstrap to make it responsive in make in center page -->
+         <div class="log-in row d-flex align-items-center justify-content-center">
+            <!-- class container for logo -->
+            <div class="d-flex justify-content-center col-12">
+               <img src="img/logo/logo log in.svg" class="d-block" alt="logo">
+            </div>
+            <!-- class form container input and button and classes responsive -->
+            <div class="form col-10 col-sm-8 col-lg-4">
+               <!-- class input-group  to add icon in input  -->
+               <div class="input-group position-relative">
+                  <!-- class input-group-prepend to make icon in left to control in icon in input -->
+                  <div class="input-group-prepend">
+                     <div class="input-group-text"><i class="far fa-envelope mian-color-text"></i></div>
+                  </div>
+                  <!-- \\\\\\\\\\\\\\\\\\\\  input Email \\\\\\\\\\\\\\\\-->
+                  <input type="text" class="form-control" required>
+                  <span class="placeholder-for-input position-absolute fw-700 sf-semi">Email</span>
+               </div>
+               <!-- class input-group  to add icon in input  -->
+               <div class="input-group mt-3 position-relative">
+                  <!-- class input-group-prepend to make icon in left to control in icon in input -->
+                  <div class="input-group-prepend">
+                     <div class="input-group-text"><i class="fas fa-lock mian-color-text"></i></div>
+                  </div>
+                  <!-- \\\\\\\\\\\\\\\\\\\\  input password \\\\\\\\\\\\\\\\-->
+                  <input type="password" class="form-control" required>
+                  <span class="placeholder-for-input position-absolute fw-700 sf-semi">Password</span>
+               </div>
+               <!-- this is button of bootstrap to login -->
+               <a href="creditcard.html" class="btn btn-primary btn-block main-color text-capitalize mt-3">login</a>
+               <!-- \\\\\\\\\\\\\\\\\\\\  link to forget password \\\\\\\\\\\\\\\\-->
+               <a href="#" class="text-capitalize forget d-flex justify-content-center mt-3 sf-semi">forgot password?</a>
+               <!-- \\\\\\\\\\\\\\\\\\\\  this is custom to another log in \\\facebook \\\google\\\ twitter \\\\\\\\\\\\\\\\-->
+               <div class="anther-way-log-in position-relative">
+                  <p class="text-center fw-700 sf-semi">or Login with your social accounts</p>
+                  <!--they his custom class social-account  container facebook -->
+                  <div class="social-account position-absolute">
+                     <!-- \\\\\ FACEBOOK \\\\\\-->
+                     <span class="main-color face social  d-inline-flex align-items-center justify-content-center">
+                     <i class="fab fa-facebook-f fa-2x"></i>
+                     </span>
+                     <!-- \\\\\ TWITTER \\\\\\-->
+                     <span class="main-color twitter social d-inline-flex align-items-center justify-content-center">
+                     <i class="fab fa-twitter fa-2x"></i>
+                     </span>
+                     <!-- \\\\\ GOOGLE \\\\\\-->
+                     <span
+                        class="main-color google social d-inline-block text-center  d-inline-flex align-items-center justify-content-center">
+                     <i class="fab fa-google fa-2x"></i>
+                     </span> 
+                  </div>
+               </div>
+               <div class="sign-up text-center ">
+                  <span class="sf-semi">Don’t you have an account?</span><a href="#" class="link-sign-up">Sign up</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script src="JS/jquery-3.4.1.min.js"></script>
+      <!-- Start file render  font awesome js file-->
+      <script src="JS/all.min.js"></script>
+      <!-- End file render  font awesome js file-->
+      <!-- Start file render  bootstrap files css-->
+      <script src="JS/popper.js"></script>
+      <script src="JS/bootstrap.min.js"></script>
+      <!-- End file render  bootstrap files css-->
+   </body>
+</html>
